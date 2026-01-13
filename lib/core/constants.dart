@@ -7,7 +7,7 @@ class AppConstants {
 
   // Data source - Full profiles database from GitHub
   static const String profilesJsonUrl =
-      'https://raw.githubusercontent.com/fungus-among-us/Mushroom_Math/refs/heads/main/profiles.json';
+      'https://raw.githubusercontent.com/fungus-among-us/Shroom_Calc/main/profiles.json';
 
   // Storage keys
   static const String profilesJsonKey = 'profiles.json';

@@ -1,0 +1,48 @@
+{
+  "source": "Test Data 2026",
+  "description": "Sample mushroom strain profiles for testing",
+  "profiles": [
+    {
+      "label": "Golden Teacher",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 6.2 },
+        { "name": "Psilocin", "mg_per_g": 0.6 }
+      ]
+    },
+    {
+      "label": "Penis Envy",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 11.0 },
+        { "name": "Psilocin", "mg_per_g": 0.5 }
+      ]
+    },
+    {
+      "label": "B+",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 5.9 },
+        { "name": "Psilocin", "mg_per_g": 0.7 }
+      ]
+    },
+    {
+      "label": "Amazonian",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 7.1 },
+        { "name": "Psilocin", "mg_per_g": 0.8 }
+      ]
+    },
+    {
+      "label": "Albino A+",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 7.7 },
+        { "name": "Psilocin", "mg_per_g": 0.6 }
+      ]
+    },
+    {
+      "label": "Blue Meanie",
+      "compounds": [
+        { "name": "Psilocybin", "mg_per_g": 10.2 },
+        { "name": "Psilocin", "mg_per_g": 1.2 }
+      ]
+    }
+  ]
+}
