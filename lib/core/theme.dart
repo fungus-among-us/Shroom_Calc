@@ -215,7 +215,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
           side: BorderSide(
-            color: lightColorScheme.outlineVariant.withValues(alpha: 0.5),
+            color: lightColorScheme.outlineVariant.withOpacity(0.5),
             width: 1,
           ),
         ),
@@ -226,18 +226,18 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor:
-            lightColorScheme.surfaceContainerHighest.withValues(alpha: 0.6),
+            lightColorScheme.surfaceContainerHighest.withOpacity(0.6),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: lightColorScheme.outline.withValues(alpha: 0.4),
+            color: lightColorScheme.outline.withOpacity(0.4),
             width: 1,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: lightColorScheme.outline.withValues(alpha: 0.3),
+            color: lightColorScheme.outline.withOpacity(0.3),
             width: 1,
           ),
         ),
@@ -300,7 +300,7 @@ class AppTheme {
 
       // Dividers with subtle appearance
       dividerTheme: DividerThemeData(
-        color: lightColorScheme.outlineVariant.withValues(alpha: 0.5),
+        color: lightColorScheme.outlineVariant.withOpacity(0.5),
         thickness: 1,
         space: 1,
       ),
@@ -357,7 +357,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
           side: BorderSide(
-            color: darkColorScheme.outlineVariant.withValues(alpha: 0.3),
+            color: darkColorScheme.outlineVariant.withOpacity(0.3),
             width: 1,
           ),
         ),
@@ -366,18 +366,18 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor:
-            darkColorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
+            darkColorScheme.surfaceContainerHighest.withOpacity(0.5),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: darkColorScheme.outline.withValues(alpha: 0.4),
+            color: darkColorScheme.outline.withOpacity(0.4),
             width: 1,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: darkColorScheme.outline.withValues(alpha: 0.3),
+            color: darkColorScheme.outline.withOpacity(0.3),
             width: 1,
           ),
         ),
@@ -432,7 +432,7 @@ class AppTheme {
         ),
       ),
       dividerTheme: DividerThemeData(
-        color: darkColorScheme.outlineVariant.withValues(alpha: 0.3),
+        color: darkColorScheme.outlineVariant.withOpacity(0.3),
         thickness: 1,
         space: 1,
       ),
