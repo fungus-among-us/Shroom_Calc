@@ -290,7 +290,7 @@ class SettingsScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isDestructive
                         ? colorScheme.errorContainer
-                        : const Color(0xFF8B7355).withValues(alpha: 0.1),
+                        : const Color(0xFF8B7355).withOpacity( 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(
