@@ -114,7 +114,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                         ),
                         decoration: BoxDecoration(
                           color:
-                              const Color(0xFF8B7355).withValues(alpha: 0.15),
+                              const Color(0xFF8B7355).withOpacity( 0.15),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
@@ -187,7 +187,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
           Icon(
             Icons.search_off_rounded,
             size: 64,
-            color: colorScheme.onSurfaceVariant.withValues(alpha: 0.5),
+            color: colorScheme.onSurfaceVariant.withOpacity( 0.5),
           ),
           const SizedBox(height: 16),
           Text(
@@ -200,7 +200,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
           Text(
             'Try a different search term',
             style: theme.textTheme.bodySmall?.copyWith(
-              color: colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
+              color: colorScheme.onSurfaceVariant.withOpacity( 0.7),
             ),
           ),
         ],
@@ -219,7 +219,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
     return Container(
       decoration: BoxDecoration(
         color: isSelected
-            ? const Color(0xFF8B7355).withValues(alpha: 0.1)
+            ? const Color(0xFF8B7355).withOpacity( 0.1)
             : colorScheme.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
@@ -277,7 +277,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                           height: 16,
                           decoration: BoxDecoration(
                             color:
-                                const Color(0xFF8B7355).withValues(alpha: 0.5),
+                                const Color(0xFF8B7355).withOpacity( 0.5),
                             borderRadius: BorderRadius.circular(1.5),
                           ),
                         ),
