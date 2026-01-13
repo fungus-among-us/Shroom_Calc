@@ -1,0 +1,22 @@
+i still targets:
+  $default:
+    builders:
+      freezed:
+        generate_for:
+          - lib/**/*.dart
+          - test/**/*_test.dart
+        options:
+          # Generate toString, == operator, and hashCode
+          # Generates copyWith methods
+          # Generates map methods
+      json_serializable:
+        generate_for:
+          - lib/data/models/*.dart
+        options:
+          any_map: false
+          checked: false
+          create_to_json: true
+          disallow_unrecognized_keys: false
+          explicit_to_json: true
+          field_rename: none
+          include_if_null: false
