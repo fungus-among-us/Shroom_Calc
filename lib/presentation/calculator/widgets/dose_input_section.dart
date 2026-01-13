@@ -40,7 +40,7 @@ class DoseInputSection extends StatelessWidget {
                   vertical: 4,
                 ),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B7355).withValues(alpha: 0.15),
+                  color: const Color(0xFF8B7355).withOpacity( 0.15),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(
@@ -207,7 +207,7 @@ class DoseInputSection extends StatelessWidget {
                         ),
                         decoration: BoxDecoration(
                           color:
-                              const Color(0xFF8B7355).withValues(alpha: 0.15),
+                              const Color(0xFF8B7355).withOpacity( 0.15),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
