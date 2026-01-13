@@ -210,7 +210,7 @@ class AppTheme {
       ),
 
       // Cards with soft shadows
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -352,7 +352,7 @@ class AppTheme {
         shadowColor: Color(0x12000000),
         surfaceTintColor: Colors.transparent,
       ),
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
