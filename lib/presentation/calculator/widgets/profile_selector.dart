@@ -39,7 +39,7 @@ class ProfileSelector extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF8B7355).withValues(alpha: 0.1),
+                    color: const Color(0xFF8B7355).withOpacity( 0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(
@@ -112,7 +112,7 @@ class ProfileSelector extends StatelessWidget {
                   width: 32,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
+                    color: colorScheme.onSurfaceVariant.withOpacity( 0.4),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -164,7 +164,7 @@ class ProfileSelector extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: isSelected
                                   ? const Color(0xFF8B7355)
-                                      .withValues(alpha: 0.1)
+                                      .withOpacity( 0.1)
                                   : colorScheme.surfaceContainerHighest,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
