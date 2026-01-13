@@ -69,7 +69,7 @@ class _ResultsDisplayState extends State<ResultsDisplay> {
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF8B7355).withValues(alpha: 0.3),
+                    color: const Color(0xFF8B7355).withOpacity( 0.3),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
@@ -81,7 +81,7 @@ class _ResultsDisplayState extends State<ResultsDisplay> {
                   Text(
                     'REQUIRED MATERIAL',
                     style: theme.textTheme.labelMedium?.copyWith(
-                      color: Colors.white.withValues(alpha: 0.9),
+                      color: Colors.white.withOpacity( 0.9),
                       letterSpacing: 1.5,
                       fontWeight: FontWeight.w700,
                     ),
@@ -111,7 +111,7 @@ class _ResultsDisplayState extends State<ResultsDisplay> {
                     Text(
                       'or ${widget.result.requiredDryG?.toStringAsFixed(2)} g dry (${widget.result.dryPercentage?.toStringAsFixed(1)}% content)',
                       style: theme.textTheme.bodyMedium?.copyWith(
-                        color: Colors.white.withValues(alpha: 0.9),
+                        color: Colors.white.withOpacity( 0.9),
                         fontFamily: 'monospace',
                       ),
                     ),
