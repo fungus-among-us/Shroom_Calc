@@ -1,4 +1,4 @@
-i still targets:
+targets:
   $default:
     builders:
       freezed:
