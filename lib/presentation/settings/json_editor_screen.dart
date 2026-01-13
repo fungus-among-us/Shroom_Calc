@@ -178,7 +178,7 @@ class _JsonEditorScreenState extends State<JsonEditorScreen> {
           else if (_isSaving)
             Container(
               padding: const EdgeInsets.all(12),
-              color: const Color(0xFF8B7355).withValues(alpha: 0.1),
+              color: const Color(0xFF8B7355).withOpacity( 0.1),
               child: Row(
                 children: [
                   const SizedBox(
