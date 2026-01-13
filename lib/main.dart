@@ -345,7 +345,7 @@ class _AppShellState extends State<AppShell> {
           setState(() => _currentIndex = index);
         },
         backgroundColor: Theme.of(context).colorScheme.surface,
-        indicatorColor: const Color(0xFF8B7355).withValues(alpha: 0.2),
+        indicatorColor: const Color(0xFF8B7355).withOpacity( 0.2),
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.calculate_outlined),
