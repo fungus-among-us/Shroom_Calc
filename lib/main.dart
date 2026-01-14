@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:compound_calculator/core/constants.dart';
 import 'package:compound_calculator/core/theme.dart';
 import 'package:compound_calculator/data/models/calculation_result.dart';
 import 'package:compound_calculator/data/models/profile.dart';
@@ -103,7 +104,7 @@ class _AppShellState extends State<AppShell> {
       });
     } catch (e) {
       setState(() {
-        _errorMessage = 'Failed to initialize: $e';
+        _errorMessage = 'Failed to initialize: $e\n\nURL: ${AppConstants.profilesJsonUrl}\n\nVersion: ${AppConstants.appVersion}';
         _isLoading = false;
       });
     }
