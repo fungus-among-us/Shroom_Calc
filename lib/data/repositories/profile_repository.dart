@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:flutter/services.dart' show rootBundle;
+
 import 'package:compound_calculator/data/models/profile.dart';
 import 'package:compound_calculator/data/sources/local_data_source.dart';
 import 'package:compound_calculator/data/sources/remote_data_source.dart';
@@ -16,16 +18,31 @@ class ProfileRepository {
 
   /// Initialize profiles on first launch
   ///
-  /// Downloads from remote, saves as both working and backup copies
+  /// Loads from local storage, bundled assets, or remote (in that order)
   Future<ProfileLibrary> initializeProfiles() async {
-    // Check if profiles already exist
+    // Check if profiles already exist locally
     final exists = await _localDataSource.profilesExist();
     if (exists) {
       final library = await _localDataSource.loadProfiles();
       if (library != null) return library;
     }
 
-    // Download from remote
+    // Try to load from bundled assets first (works offline)
+    try {
+      final jsonString = await rootBundle.loadString('assets/profiles.json');
+      final json = jsonDecode(jsonString) as Map<String, dynamic>;
+      final library = ProfileLibrary.fromJson(json);
+
+      // Save as both working and backup
+      await _localDataSource.saveProfiles(library);
+      await _localDataSource.saveProfilesBackup(library);
+
+      return library;
+    } catch (_) {
+      // Fall through to remote download
+    }
+
+    // Download from remote as last resort
     final jsonString = await _remoteDataSource.downloadProfiles();
     final json = jsonDecode(jsonString) as Map<String, dynamic>;
     final library = ProfileLibrary.fromJson(json);

@@ -2,7 +2,7 @@
 class AppConstants {
   // App metadata
   static const String appName = 'Compound Calculator';
-  static const String appVersion = '0.2.1';
+  static const String appVersion = '0.3.0';
   static const String packageId = 'com.medicine.compound_calculator';
 
   // Data source - Full profiles database from GitHub
